@@ -1,0 +1,226 @@
+html {
+    margin: auto;
+    padding: 10px;
+    
+}
+
+body {
+    font-family: 'Brush Script MT';
+    font-weight: bold;
+    background-color: darkmagenta;
+ 
+}
+
+main h1{
+    text-align: center;
+    font-size: 44px;
+    color: gold;
+}
+
+#container {
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(180px, 1fr) ) ;
+    grid-gap: 25px;
+    align-content: center;
+    justify-items: center;
+    
+}
+
+#container p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  
+}
+
+.fizbuz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    font-size: 24px;
+    border-radius:3px;
+    box-shadow: 15px 5px darksalmon;
+    color: gold;
+    border: 3px solid gold;
+
+    transition: all 0.5s linear;
+    background: linear-gradient(to bottom right, darkblue 0%, darkblue 100%); /* W3C */
+}
+
+.fizbuz:hover {
+    box-shadow:rgba(202, 201, 201, 0.8) 0px 5px 15px, inset rgba(202, 201, 201, 0.8) 0px -10px 20px;
+}
+
+/* FIZ class */
+
+.fiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    font-size: 24px;
+    border-radius: 3px;
+    box-shadow: 15px 5px darksalmon;
+    color: gold;
+    border: 3px solid gold;
+
+    transition: all 0.5s linear;
+    background: linear-gradient(to bottom right, darkolivegreen 0%, darkolivegreen 100%); /* W3C */
+}
+
+.fiz:hover {
+    box-shadow:rgba(202, 201, 201, 0.8) 0px 5px 15px, inset rgba(202, 201, 201, 0.8) 0px -10px 20px;
+}
+
+/* BUZ class */
+
+.buz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    font-size: 24px;
+    border-radius:4px;
+    box-shadow: 15px 5px darksalmon;
+    color: gold;
+    border: 3px solid gold;
+
+    transition: all 0.3s linear;
+    background: linear-gradient(to bottom right, teal 0%, teal 100%); /* W3C */
+}
+
+.buz:hover {
+    box-shadow:rgba(202, 201, 201, 0.8) 0px 5px 15px, inset rgba(202, 201, 201, 0.8) 0px -10px 20px;
+}
+
+/* NUM class */
+
+.num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    font-size: 24px;
+    border-radius:4px;
+    box-shadow: 15px 5px darksalmon;
+    color: gold;
+    border: 3px solid gold;
+
+    transition: all 0.5s linear;
+    background: linear-gradient(to bottom right, darkred 0%, darkred 100%); /* W3C */
+}
+
+.num:hover {
+    box-shadow:rgba(202, 201, 201, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* Navigation */
+
+.navContainer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkmagenta;
+    color: gold;
+    font-size: 24px;
+    border-radius: 4px;
+
+}
+  
+  input, button {
+      font-size: 24px;
+      text-align: center;
+      height: 50px;
+      width: 100px;
+      border-radius: 50%
+  }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    }
+
+
+    
+    #btnOne {
+        background-color: purple; 
+        font-family: 'Brush Script MT', cursive;
+        font-weight: bold;
+        color: gold; 
+        border: 3px solid gold;
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      
+    #btnTwo {
+        background-color: purple; 
+        font-family: 'Brush Script MT', cursive;
+        font-weight: bold;
+        color: gold; 
+        border: 3px solid gold;
+        height: 50px;
+        width: 100px;
+        border-radius: 50%
+      }
+      
+    #btnThree {
+        background-color: purple; 
+        font-family: 'Brush Script MT', cursive;
+        font-weight: bold;
+        color: gold; 
+        border: 3px solid gold;
+        height: 50px;
+        width: 100px;
+        border-radius: 50%
+      }
+      
+    #btnFour {
+        background-color: purple;
+        font-family: 'Brush Script MT', cursive;
+        font-weight: bold;
+        color: gold;
+        border: 3px solid gold;
+        height: 50px;
+        width: 100px;
+        border-radius: 50%
+      }
+      
+    #btnFive {
+        background-color: purple;
+        font-family: 'Brush Script MT', cursive;
+        font-weight: bold;
+        color: gold;
+        border: 3px solid gold;
+        height: 50px;
+        width: 100px;
+        border-radius: 50%
+      }
+
+.hidden {
+    display: none;
+
+}
+@media (max-width: 576px) {
+    #container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navContainer {
+        width: 100%;
+        min-height: 400px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+} 
